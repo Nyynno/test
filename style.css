@@ -1,0 +1,66 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Skip to Main Content Link */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #000;
+  color: #fff;
+  padding: 8px;
+  z-index: 100;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* Navigation Bar with Flex */
+nav {
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #ffcc00;
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+
+/* Image Styling with Box Model */
+img {
+  border: 2px solid #ccc;
+  padding: 5px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 300px;
+}
+
+/* Grid Layout on Gallery Page */
+.grid-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin: 20px;
+  justify-items: center;
+}
+
+/* nth-child Selector */
+.grid-gallery img:nth-child(even) {
+  border-radius: 50%;
+}
